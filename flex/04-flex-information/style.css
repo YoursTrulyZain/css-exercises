@@ -2,6 +2,35 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+/* Outer most flexbox that holds title and "tile holder" */
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Tile holder flex box that holds tiles */
+.tile-holder {
+  display: flex;
+  gap: 52px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Each tile is a flexbox that holds an image and a description */
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* The properties that control the text used as description in each tile */
+.text {
+  text-align: center;
+  width: 200px;
+}
+
 img {
   width: 100px;
   height: 100px;
